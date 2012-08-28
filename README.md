@@ -11,7 +11,14 @@ Open the `config.json` to see all these customizations.
 ## How to Run
 
 * Download the code to your machine.
+
+* Install `punch` and `punch-engine-handlebars`.
+	
+		npm install -g punch
+		npm install punch-engine-handlebars
+
 * Then, inside directory run `punch s`
+
 * Now, point your browser to `http://localhost:9009`.
 
 ## Image Credits
