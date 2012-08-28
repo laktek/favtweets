@@ -1,0 +1,23 @@
+<div class="content">
+	<h1>{{#titleize}}{{user}}'s Favorities{{/titleize}}</h1>
+
+	<div class="tweets">
+	{{#tweets}}
+	<div class="tweet">
+		<div class="avatar">
+			<a href="http://twitter.com/{{user.screen_name}}"><img src="{{user.profile_image_url}}" alt="profile image"></a>
+		</div>
+		<div class="details">
+			<h4><strong>{{user.name}}</strong> <a href="http://twitter.com/{{user.screen_name}}">@{{user.screen_name}}</a></h4>
+			<p>
+				{{text}}
+				<span><a href="http://twitter.com/{{user.screen_name}}/status/{{id}}">{{date created_at}}</a></span>
+			</p>
+		</div>
+	</div>
+	{{/tweets}}
+	{{^tweets}}
+		<p>Sorry, no favorites here.</p>
+	{{/tweets}}
+	</div>
+</div>

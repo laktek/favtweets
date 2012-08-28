@@ -1,0 +1,20 @@
+{
+	"template_dir": "templates",
+	"content_dir": "contents",
+	"output_dir": "public",
+
+	"server": {
+		"port": 9009
+	},
+	
+	"plugins": {
+		"content_handler": "./favtweet_content_handler.js",
+
+		"helpers": {
+			"site_heleprs": "./site_helpers.js"	
+		},
+
+		"template_engine": "punch-engine-handlebars"
+	}
+}
+
