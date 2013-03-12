@@ -10,9 +10,9 @@ module.exports = {
 
 		if (basepath === "/index") {
 			response_options.header["Set-Cookie"] = "bg=" + getRandomInt(0, 1);
-			return callback(null, { "index": true }, {}, response_options); 
+			return callback(null, { "tag": { "index": true } }, response_options, new Date());
 		} else {
-			return callback(null, { "index": false }, {}, response_options); 
+			return callback(null, { "tag": {  "index": false } }, {}, response_options, new Date());
 		}
 	}
 
